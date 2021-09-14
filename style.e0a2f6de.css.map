@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,KACE,iGAAiE,CACjE,qBAAsB,CACtB,4CAAgD,CAChD,UACF","file":"style.e0a2f6de.css","sourceRoot":"../src","sourcesContent":["body {\n  background: url(images/globe-3.gif) no-repeat center center fixed;\n  background-size: cover;\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n  color: white;\n}\n"]}
