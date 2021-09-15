@@ -29,12 +29,20 @@ function renderCountriesCard(country) {
             }
 }
 
+let lastRequest = "";
+
 function onSearch(e) {
     clearInput()
-     const searchCountry = e.target.value
+    if (e.target.value.trim() === "")
+        return
+    if (lastRequest === e.target.value.trim())
+        return
+    lastRequest = e.target.value.trim()
+    
+    const searchCountry = e.target.value;
     // countryHolder.innerHTML = '';
 
-    fetchCountries(searchCountry)
+    fetchCountries(lastRequest)
     .then(renderCountriesCard)
  .catch(error => console.log(error))
     

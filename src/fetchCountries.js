@@ -11,9 +11,10 @@ export default  function fetchCountries(name) {
         return response.json();
            })
     
-  .catch(error => {
+           .catch(error => {
+  
       inputRef.value = ''
-      Notiflix.Notify.failure('Oops, there is no country with that name');
+      Notiflix.Notify.failure('Oops,something went wrong. Please try again later');
   });
    
 }
